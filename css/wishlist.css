@@ -1,0 +1,1358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", "Noto Sans KR";
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    width: 1920px;
+    
+}
+a{
+    color: #333;
+    font-family: "Roboto", "Noto Sans KR";
+}
+button{
+    color: #333;
+    font-family: "Roboto", "Noto Sans KR";
+}
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+}
+.event{
+    width: 1920px; height: 65px;
+    background-color: black;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 650px;
+}
+.event1 img{
+    width: 30px;
+    float: left;
+}
+.event p{
+    font-size: 14px;
+    color: white;
+    float: left;
+    padding-right: 50px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.event2{
+    display: block;
+    padding-right: 10px;
+}
+.event2 img{
+    width: 30px; height: 30px;
+    float: left;
+}
+.event3 img{
+    width: 30px; height: 30px;
+    float: left;
+}
+
+
+/* 헤더 */
+header{
+    width: 1920px; height: 115px;
+    background-color: #0058ab;
+    position: relative;
+}
+header p{
+    color: #ffffff;
+    font-size: 20px;
+}
+.logo img{
+    margin: 25px 70px;
+    float: left;
+}
+.search{
+    width: 820px; height: 70px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    float: left;
+    margin-top: 20px;
+    padding: 18px;
+}
+.search .sch_icon img{
+    width: 30px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 13px;
+}
+.search p{
+    float: left;
+    margin-top: 3px;
+    font-size: 17px;
+}
+.search .camera img{
+    width: 30px;
+    float: right;
+    margin-right: 15px;
+}
+
+/* 검색창 클릭시 나타나는 창 */
+
+.hidden_search{
+    width: 850px; height: 740px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; left: 286px;
+    z-index: 1;
+    border-radius: 10px;
+    display: none;
+}
+.hidden_search .search{
+    width: 820px; height: 70px;
+    border: 1.5px solid #0058ab;
+    border-radius: 50px;
+    float: left;
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 18px;
+}
+.hidden_search .search .sch_icon img{
+    width: 30px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 13px;
+}
+.hidden_search .search p{
+    float: left;
+    color: #333;
+}
+.hidden_search .search .camera img{
+    width: 30px;
+    float: right;
+    margin-right: 15px;
+}
+.hidden_search .search_ca{
+    width: 770px; height: 85px;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 18px;
+}
+.hidden_search .search_ca .camera{
+    width: 40px;
+    background-color: rgb(221, 221, 221);
+    padding: 25px;
+    border-radius: 50px;
+    position: relative;
+    float: left;
+}
+.hidden_search .search_ca .camera img{
+    width: 30px;
+    position: absolute; left: 10px; top: 10px;
+}
+.hidden_search .search_ca p{
+    float: left;
+    padding: 10px 20px;
+    color: #333;
+}
+.hidden_search .search_ca .close img{
+    width: 30px;
+    float: right;
+    margin: 10px;
+}
+.hidden_search .searchgnb{
+    width: 1920px; height: 500px;
+    padding: 0px;
+    clear: both;
+}
+.hidden_search .searchgnb li{
+    clear: both;
+    display: block;
+    padding: 30px 50px;
+}
+.hidden_search .searchgnb img{
+    width: 30px;
+    float: left;
+}
+.hidden_search .searchgnb p{
+    float: left;
+    padding: 5px 15px;
+    color: #333;
+    font-size: 17px;
+}
+
+/* 우측 네비게이션 */
+.gnb{
+    padding-top: 40px; 
+}
+.gnb li{
+    float: left;
+}
+.gnb img{
+    width: 30px;
+    float: left;
+    margin-left: 25px;
+}
+.gnb p{
+    float: left;
+    margin-left: 10px;
+    font-size: 17px;
+}
+.post_code{
+    margin-left: 30px;
+}
+.fav{
+    margin-left: 40px;
+}
+/* 우편번호 입력 클릭시  */
+header .post_click{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+header .post_click img{
+    width: 25px;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+header .post_click h2{
+    clear: both;
+    padding: 20px;
+}
+header .post_click p{
+    clear: both;
+    color: #333;
+    font-size: 13px;
+    padding: 0px 20px;
+}
+header .post_click button{
+    width: 360px; height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+header .post_click span{
+    font-size: 13px;
+    color: #7a7a7a;
+    padding-left: 20px;
+    display: block;
+}
+/* 매장선택 클릭시  */
+header .store_click{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+header .store_click img{
+    width: 25px;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+header .store_click h2{
+    clear: both;
+    padding: 20px 20px 5px;
+}
+header .store_click p{
+    clear: both;
+    color: #8e8e8e;
+    font-size: 13px;
+    padding: 0px 20px;
+}
+header .store_click .location_search{
+    width: 360px; height: 50px;
+    background-color: #ebebeb;
+    border-radius: 50px;
+    margin: 20px 25px;
+    display: block;
+    float: left;
+}
+header .store_click .location_search .searchicon{
+    float: left;
+    margin: 13px 18px;
+}
+header .store_click .location_search p{
+    float: left;
+    color: #333;
+    font-size: 13px;
+    display: block;
+    margin: -36px 35px;
+}
+header .store_click .location_search .locationicon{
+    float: right;
+    margin: -38px 18px;
+}
+header .store_click .underDiv{
+    clear: both;
+    margin: 0px -15px;
+    width: 425px; height: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #e7e7e7;
+    padding: 10px 10px;
+}
+header .store_click .underDiv button{
+    width: 360px; height: 70px;
+    text-align: left;
+    margin: 10px 20px 0px;
+    padding-left: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    border: none;
+    background-color: #ffffff;
+}
+header .store_click .underDiv button span{
+    font-weight: normal;
+    color: #646464;
+}
+/* 로그인하기 클릭시  */
+header .login_click{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+header .login_click img{
+    width: 25px;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+header .login_click .loginhead{
+    clear: both;
+}
+header .login_click h2{
+    font-size: 35px;
+    padding: 30px 20px 5px;
+    float: left;
+}
+header .login_click .loginbtn{
+    float: right;
+    margin: 50px 10px;
+    width: 80px; height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    text-decoration-line: underline;
+    font-size: 11px;
+    cursor: pointer;
+}
+header .login_click .signup{
+    clear: both;
+    width: 425px; height: 90px;
+    margin: 0px -15px;
+    text-align: left;
+    border-top: 1px solid #949494;
+    cursor: pointer;
+}
+header .login_click .signup p{
+    color: #333;
+    margin: 33px;
+    float: left;
+    font-size: 15px;
+}
+header .login_click .signup img{
+    width: 50px; height: 50px;
+    border-radius: 50px;
+    padding: 13px;
+    margin: 20px;
+    float: right;
+    border: 1px solid #333;
+    background-color: #ffffff;
+}
+header .login_click .signup2{
+    clear: both;
+    width: 425px; height: 90px;
+    margin: 0px -15px;
+    text-align: left;
+    border-top: 1px solid #949494;
+    border-bottom: 1px solid #949494;
+    cursor: pointer;
+}
+header .login_click .signup2 p{
+    color: #333;
+    margin: 33px;
+    float: left;
+    font-size: 15px;
+}
+header .login_click .signup2 img{
+    width: 50px; height: 50px;
+    border-radius: 50px;
+    padding: 13px;
+    margin: 20px;
+    float: right;
+    border: 1px solid #333;
+    background-color: #ffffff;
+}
+header .login_click .familybtn{
+    width: 400px; height: 70px;
+    text-align: left;
+    padding: 25px 20px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    border: 1px solid #0058ab;
+    border-radius: 5px;
+    color: #0058ab;
+    cursor: pointer;
+}
+header .login_click .familybtn img{
+    margin: -5px;
+}
+header .login_click ul{
+    margin-top: 30px;
+}
+header .login_click ul li a{
+    padding-left: 20px;
+    line-height: 3;
+    color: #757575;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* 장바구니 클릭시  */
+header .local_mall_click{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+header .local_mall_click .cls_localmenu{
+    width: 25px;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+header .local_mall_click .bag_img{
+    width: 180px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+header .local_mall_click h2{
+    clear: both;
+    padding: 20px;
+}
+header .local_mall_click p{
+    clear: both;
+    color: #333;
+    font-size: 13px;
+    padding: 0px 20px;
+    line-height: 3;
+}
+header .local_mall_click button{
+    width: 180px; height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 메뉴 클릭  */
+header .menu_click{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 45px;
+}
+header .menu_click .head_search div{
+    width: 280px; height: 52px;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    float: left;
+}
+header .menu_click .head_search p{
+    font-size: 16px;
+    color: #333;
+    padding: 15px;
+}
+header .menu_click .head_search img{
+    width: 30px;
+}
+header .menu_click .head_search img:nth-child(1){
+    float: left;
+    margin: 10px 20px;
+}
+header .menu_click .head_search .cls_menu{
+    float: right;
+    /* margin: 15px 0px; */
+    position: absolute; top: 35px; right: 45px; z-index: 10;
+    cursor: pointer;
+}
+header .menu_click .menu_li{
+    clear: both;
+}
+header .menu_click .menu_li li{
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+header .menu_click .menu_li li img{
+    float: right;
+    width: 30px;
+}
+header .menu_click .menu_li2 li{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+header .menu_click .menu_li2 li img{
+    float: right;
+    width: 30px;
+}
+header .menu_click .menu_li3{
+    margin-top: 20px;
+}
+header .menu_click .menu_li3 li{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+header .menu_click .bottom{
+    width: 385px; height: 60px;
+    background-color: #e1e1e1;
+    margin-top: 20px;
+    margin-left: -25px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+header .menu_click .bottom img{
+    width: 30px;
+    float: left;
+    margin-right: 15px;
+}
+header .menu_click .bottom p{
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* 메뉴 -> 모든제품 */
+.all_menu{
+    display: none;
+    width: 425px; height: 2370px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.all_menu .header_menu button , h2{
+    float: left;
+}
+.all_menu .header_menu button img , .cls_menu_all{
+    width: 25px;
+    cursor: pointer;
+}
+.all_menu .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.all_menu h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.all_menu .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+
+.all_menu .frame{
+    clear: both;
+    width: 380px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.all_menu .frame .imgGroup{
+    width: 600%;
+}
+.all_menu .frame .imgGroup div{
+    float: left;
+    padding: 8px;
+}
+.all_menu .frame .imgGroup div img{
+    border-radius: 10px;
+    width: 150px; height: 80px;
+}
+.all_menu .frame .imgGroup div p{
+    width: 150px;
+    color: #333;
+    font-size: 13px;
+}
+.all_menu .box1{
+    clear: both;
+    width: 100%; height: 80px;
+    background-color: #ffffff;
+    padding: 30px 10px;
+}
+.all_menu .box1 img:nth-child(1){
+    width: 74px;
+    float: left;
+}
+.all_menu .box1 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    float: left;
+    padding: 27px;
+}
+.all_menu .arrow{
+    width: 20px;
+    float: right;
+    margin: 27px 0px;
+}
+/* 메뉴 -> 공간별 쇼핑하기  */
+.place_shop{
+    display: none;
+    width: 425px; height: 1070px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.place_shop .header_menu button , h2{
+    float: left;
+}
+.place_shop .header_menu button img , .cls_menu_all{
+    width: 25px;
+}
+.place_shop .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.place_shop h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.place_shop .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+
+.place_shop .box1{
+    width: 190px; height: 160px;
+    clear: both;
+    float: left;
+    background-color: #ffffff;
+    padding: 20px 0px;
+}
+.place_shop .box1 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+}
+.place_shop .box1 img , .box2 img{
+    width: 180px;
+    border-radius: 10px;
+}
+.place_shop .box2{
+    width: 190px; height: 160px;
+    float: right;
+    background-color: #ffffff;
+    padding: 20px 10px;
+}
+.place_shop .box2 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+}
+/* 메뉴 -> 특별한 가격  */
+.special{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.special .header_menu{
+    width: 100%; height: 40px;
+}
+.special .header_menu button , h2{
+    float: left;
+}
+.special .header_menu button img , .cls_menu_all{
+    width: 25px;
+}
+.special .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.special h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.special .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+.special .allbtn{
+    clear: both;
+    width: 380px; height: 50px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 30px 0px;
+}
+.special ul li{
+    line-height: 4.5;
+    padding-left: 20px;
+}
+/* 메뉴 -> 새로운 소식 */
+.news{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.news .header_menu{
+    width: 100%; height: 40px;
+}
+.news .header_menu button , h2{
+    float: left;
+}
+.news .header_menu button img , .cls_menu_all{
+    width: 25px;
+}
+.news .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.news h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.news .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+.news .allbtn{
+    clear: both;
+    width: 380px; height: 50px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 30px 0px;
+}
+.news ul li{
+    line-height: 4.5;
+    padding-left: 20px;
+}
+.news .underbtn{
+    width: 380px; height: 80px;
+    background-color: #ececec;
+    margin-top: 25px;
+}
+.news .underbtn p{
+    color: #333;
+    text-align: left;
+    padding: 30px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.news .underbtn img{
+    width: 50px; height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    float: right;
+    padding: 15px;
+    margin: 16px 20px;
+}
+/* 메뉴 -> 아이디어  */
+.idea{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.idea .header_menu{
+    width: 100%; height: 40px;
+}
+.idea .header_menu button , h2{
+    float: left;
+}
+.idea .header_menu button img , .cls_menu_all{
+    width: 25px;
+}
+.idea .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.idea h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.idea .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+.idea .allbtn{
+    clear: both;
+    width: 380px; height: 50px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 30px 0px;
+}
+.idea ul li{
+    line-height: 4.5;
+    padding-left: 20px;
+}
+/* 메뉴 -> 셀프 플래닝 */
+.selfplan{
+    display: none;
+    width: 425px; height: 920px;
+    background-color: #ffffff;
+    position: absolute; top: 0px; right: 0px;
+    z-index: 2;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+.selfplan .header_menu{
+    width: 100%; height: 40px;
+}
+.selfplan .header_menu button , h2{
+    float: left;
+}
+.selfplan .header_menu button img , .cls_menu_all{
+    width: 25px;
+}
+.selfplan .header_menu button{
+    border-radius: 50%;
+    width: 40px; height: 40px;
+    padding: 5px 12px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+.selfplan h2{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.selfplan .header_menu .cls_menu_all{
+    float: right;
+    margin: 5px 10px;
+}
+.selfplan .allbtn{
+    clear: both;
+    width: 380px; height: 50px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 13px;
+    margin: 30px 0px;
+}
+.selfplan ul li{
+    line-height: 4.5;
+    padding-left: 20px;
+}
+.selfplan .underbtn{
+    width: 380px; height: 80px;
+    background-color: #ececec;
+    margin-top: 25px;
+}
+.selfplan .underbtn p{
+    color: #333;
+    text-align: left;
+    padding: 30px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.selfplan .underbtn img{
+    width: 50px; height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    float: right;
+    padding: 15px;
+    margin: 16px 20px;
+}
+/* 메인 */
+main{
+    width: 1920px;
+}
+/* 섹션 1 모든제품 */
+.sec1{
+    width: 1920px; height: 370px;
+    padding: 60px 100px 0px;
+    position: relative;
+}
+.sec1_nav{
+    width: 1920px;
+    /* 퍼센트로 변경 */
+}
+.sec1_nav img{
+    width: 30px;
+    float: left;
+    margin-right: 10px;
+}
+.sec1_nav p{
+    font-size: 18px;
+    float: left;
+}
+.sec1_nav li a{
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 25px;
+}
+.sec1_nav .hr1{
+    width: 860px;
+    border: 1px solid black;
+    position: absolute; top: 102px; left: 100px;
+}
+.sec1_nav .hr2{
+    width: 130px;
+    border: 3px solid #0058ab;
+    position: absolute; top: 98px; left: 100px;
+}
+
+.inven{
+    width: 1920px;
+    overflow: hidden;
+    clear: both;
+    content: "";
+    display: block;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.inven .invengroup{
+    width: 200%;
+    transition: transform 0.3s ease;
+}
+.inven li a{
+    float: left;
+    margin-right: 52px;
+}
+.inven .last{
+    margin-right: 300px;
+}
+.inven div{
+    clear: both;
+    display: block;
+    padding: 35px 820px;
+}
+.inven div hr{
+    width: 10px; height: 10px;
+    border-radius: 50px;
+    float: left;
+    margin: 3px;
+
+}
+#oneHr{
+    border: 2px solid #0058ab;
+    background-color: #0058ab;
+}
+#twoHr{
+    border: 2px solid #c9c9c9;
+    background-color: #c9c9c9;
+}
+.inven>div{
+    clear: both;
+    content: "";
+    display: block;
+    margin: 0 auto;
+}
+/* 히든버튼 */
+.sec1 .left_btn{
+    width: 60px; height: 60px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 50px;
+    position: absolute; top: 180px; left: 60px; z-index: 1A;
+}
+.sec1 .left_btn:hover{
+    display: block;
+    cursor: pointer;
+}
+.sec1 .left_btn img{
+    width: 40px;
+    padding-left: 5px;
+    margin-left: 2px;
+}
+.sec1 .right_btn{
+    width: 60px; height: 60px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 50px;
+    position: absolute; top: 180px; right: 110px;
+    z-index: 1;
+}
+.sec1 .right_btn:hover{
+    display: block;
+    cursor: pointer;
+}
+.sec1 .right_btn img{
+    width: 40px;
+    padding-left: 3px;
+}
+.hidden {
+    display: none; /* 기본적으로 숨김 */
+}
+
+/* 섹션 2 */
+.sec2{
+    width: 1920px; height: 300px;
+    clear: both;
+    padding-left: 100px; 
+}
+.sec2 h1{
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.sec2 span{
+    line-height: 2.5;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+.sec2 .wishbtn{
+    width: 170px; height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.sec2 .wishbtn:hover{
+    background-color: #333;
+    cursor: pointer;
+}
+.sec2 .logbtn{
+    width: 100px; height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.sec2 .logbtn:hover{
+    border: 3px solid black;
+    cursor: pointer;
+}
+/* 푸터 */
+footer{
+    width: 1920px; height: 500px;
+    background-color: #ececec;
+}
+footer .topbar{
+    width: 1920px; height: 300px;
+    padding-top: 20px;
+}
+footer div{
+    float: left;
+    color: black;
+}
+footer .ikeafamilysign{
+    width: 324px; height: 252px;
+    position: relative;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px;
+}
+footer .ikeafamilysign:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+footer .ikeabusinesssign{
+    width: 346px; height: 252px;
+    position: relative;
+    margin-left: 30px;
+    padding: 20px;
+    border-radius: 20px;
+}
+footer .ikeabusinesssign:hover{
+    background-color: #dddddd;
+    cursor: pointer;
+}
+footer .ikeafamilysign h2 , .ikeabusinesssign h2{
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+}
+footer .ikeafamilysign p , .ikeabusinesssign p{
+    font-size: 16px;
+    padding: 10px;
+}
+footer .ikeafamilysign span , .ikeabusinesssign span{
+    font-size: 16px;
+    padding: 20px 10px;
+    display: block;
+}
+footer .ikeafamilysign button{
+    width: 224px; height: 54px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 14px; font-weight: bold;
+    border-radius: 50px; border: none;
+    position: absolute; left: 20px; bottom: 10px;
+    margin-left: 10px;
+}
+footer .ikeabusinesssign button{
+    width: 224px; height: 54px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 14px; font-weight: bold;
+    border-radius: 50px; border: none;
+    position: absolute; left: 20px; bottom: 10px;
+    margin-left: 10px;
+}
+footer .gnb{
+    float: right;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer .gnb li{
+    float: left;
+    margin-right: 20px;
+    font-size: 17px;
+    background-color: #ececec;
+}
+footer .gnb li>a{
+    clear: both;
+    width: 220px; height: 70px;
+    display: block;
+}
+footer .gnb li img{
+    margin-left: 98px;
+}
+footer .gnb li:hover .f_submenu{
+    max-height: 200px; /* 필요한 높이로 조정 */
+}
+footer .gnb .f_submenu{
+    max-height: 0; /* 기본적으로 숨김 */
+    overflow: hidden; /* 내용이 넘치지 않도록 */
+    transition: max-height 0.3s ease-in-out; /* 애니메이션 효과 */
+    margin-top: 30px;
+    position: absolute;
+}
+footer .gnb .f_submenu li{
+    clear: both;
+    display: block;
+    content: "";
+    width: 220px; height: 50px;
+    padding-top: 30px;
+    font-size: 15px;
+}
+footer hr{
+    clear: both;
+    display: block;
+    content: "";
+    width: 1850px;
+    border: 1px solid #333;
+    margin: auto;
+    margin-top: 0px;
+}
+footer .botmbar{
+    clear: both;
+    content: "";
+    width: 1920px;
+    padding-top: 30px;
+    margin-left: 50px;
+    display: block;
+    font-size: 14px;
+}
+footer .botmbar span{
+    float: left;
+}
+footer .botmbar .right{
+    float: right;
+    margin-right: 100px;
+}
+footer .botmbar .right li{
+    float: left;
+    margin-left: 20px;
+}
+footer .botmbar2{
+    clear: both;
+    content: "";
+    width: 1920px; height: 140px;
+    padding-top: 30px;
+    margin-left: 50px;
+    display: block;
+    font-size: 14px;
+}
+footer .botmbar2 .left{
+    font-size: 14px;
+    float: left;
+}
+footer .botmbar2 .left p{
+    padding-bottom: 5px;
+}
+footer .botmbar2 .right{
+    width: 120px; height: 40px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+footer .botmbar2 .right img{
+    float: left;
+    width: 30px;
+}
+footer .botmbar2 .right p{
+    padding-top: 5px;
+}
+/* 플로팅버튼 */
+.floating{
+    position: fixed; right: 20px; bottom: 20px;
+    width: 56px; height: 56px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    background-color: rgb(249, 215, 22);
+    cursor: pointer;
+}
+.floating img{
+    width: 24px;
+    margin: 17px;
+}
+.open_floating{
+    display: none;
+    width: 415px; height: 770px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: fixed; bottom: 20px; right: 20px;
+}
+.open_floating .header{
+    width: 415px; height: 60px;
+    background-color: rgb(249, 215, 22);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.open_floating .header h1{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-left: 7px;
+    padding: 22px 25px;
+    float: left;
+}
+.open_floating .header img{
+    float: right;
+    width: 25px;
+    margin: 18px;
+}
+.open_floating .main{
+    clear: both;
+    width: 415px; height: 710px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.open_floating .main .check_btn{
+    width: 26px; height: 26px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    float: left;
+    margin: 40px 25px;
+}
+.open_floating .main .check_btn img{
+    width: 19px;
+    margin: 2px;
+}
+.open_floating .main p{
+    float: right;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-right: 15px;
+}
+.open_floating .main span{
+    text-decoration: underline;
+}
+.open_floating .main button{
+    margin: 520px 30px;
+    padding: 20px 150px;
+    border-radius: 50px;
+    border: none;
+    font-size: 12px;
+    background-color: #e1e1e1;
+}
+
+
+.floating_top{
+    /* display: none; */
+    position: fixed; left: 20px; bottom: 20px;
+    width: 56px; height: 56px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}

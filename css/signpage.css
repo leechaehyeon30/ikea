@@ -1,0 +1,225 @@
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    font-family: "Roboto" , "Noto Sans KR";
+}
+.main_left{
+    float: left;
+    width: 40%;
+    padding-top: 32px;
+    padding-left: 400px;
+}
+header{
+    width: 100%; height: 100px;
+}
+header a:nth-child(1){
+    position: absolute; top: 44px; left: 100px;
+}
+header a:nth-child(2){
+    position: absolute; top: 35px; left: 400px;
+}
+h1{
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+.sub_h1{
+    display: block;
+    font-size: 14px; 
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+.imggroup1{
+    width: 152px;
+    float: left;
+    margin-right: 0.4rem;
+}
+.imggroup2{
+    width: 152px;
+    float: left;
+}
+.signimg1{
+    width: 100%; height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_1.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg2{
+    width: 100%; height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_2.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg3{
+    width: 100%; height: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_3.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg4{
+    width: 100%; height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_4.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg5{
+    width: 100%; height: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_5.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg6{
+    width: 100%; height: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_6.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg7{
+    width: 100%; height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_7.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg8{
+    width: 100%; height: 192px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_8.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+.signimg9{
+    width: 100%; height: 256px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/signpage/SIGNUP_IMAGE_9.jpg');
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+}
+
+.mini_footer{
+    clear: both;
+    content: "";
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 30px;
+}
+.mini_footer span{
+    text-decoration: underline;
+}
+
+
+/* 오른쪽  */
+.main_right{
+    float: right;
+    width: 60%;
+    padding-top: 32px;
+    padding-left: 250px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.main_right .ques_sign{
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.main_right strong{
+    line-height: 40px;
+}
+.main_right .kakao_sign{
+    display: block;
+    margin-bottom: 30px;
+}
+.main_right .kakaobtn{
+    padding: 18px 115px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    font-family: "Noto Sans KR";
+    border: none;
+    margin-bottom: 40px;
+}
+.kakaobtn:hover{
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+input{
+    width: 370px; height: 45px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-bottom: 35px;
+}
+select{
+    width: 370px; height: 45px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-bottom: 35px;
+}
+.postbtn{
+    width: 150px; height: 55px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0058AB;
+    color: white;
+    font-family: "Noto sans KR";
+    font-weight: bold;
+}
+.postbtn:hover{
+    background-color: #004688;
+    cursor: pointer;
+}
+.checkbox-container{
+    width: 100%; height: 60px;
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+input[type="checkbox"]{
+    width: 25px; height: 25px;
+    margin-right: 20px;
+    float: left;
+}
+input[type="checkbox"]:hover {
+    border: 2px solid black;
+}
+label{
+    cursor: pointer;
+}
+.emailbtn{
+    width: 370px; height: 55px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: "Noto sans KR";
+    font-weight: bold;
+    cursor: pointer;
+}
+.emailbtn:hover{
+    background-color: rgb(41, 41, 41);
+}
